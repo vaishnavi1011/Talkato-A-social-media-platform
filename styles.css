@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-#foo {
+#foo1,#foo2 {
     text-decoration: none;
 }
 
@@ -26,7 +27,7 @@ body {
 
 .navbar {
     background: #242526;
-    width: 100vw;
+    /* width: 100vw; */
     padding: 0 20px 0 20px;
     height: 60px;
     display: flex;
@@ -128,7 +129,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 45px;
+    /* margin-right: 45px; */
 }
 
 .navbar_right_profile {
@@ -176,31 +177,29 @@ body {
 /* navbar ends here */
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* position: ;
-  top: 60px;
-  left: 0px;*/
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
 }
 
 .content_left {
-    width: 25%;
-    height: 100vh;
-    padding-left: 10px;
+    height: 92vh;
+    padding-left: 5px;
+    position: fixed;
+    overflow-y: scroll; 
+    overflow-x: hidden; 
 }
 
 .content_center {
-    width: 50%;
+    margin: auto;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
+    padding-left: 10px;
 }
 
 .content_right {
-    width: 25%;
-    height: 100vh;
+    height: 92vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .content_left ul {
