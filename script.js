@@ -1,12 +1,12 @@
-function hide_show() {
-    var x = document.getElementsByClassName('hide_show');
-    if (x.style.display === 'block') {
-      x.style.display = 'none';
-    } else {
-      x.style.display = 'block';
-    }
+var a;
+a = document.getElementById("hide_show");
 
-    // console.log("hello");
-    // var y = document.getElementsByClassName("see_more");
-    // y.style.display = "none";
-  }
+function hide() {
+    if (a.style.display === "none") {
+        document.getElementById("hide_show").style.display = "block";
+        return 0;
+    } else {
+        document.getElementById("hide_show").style.display = "none";
+        return 1;
+    }
+}
