@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(-45deg, #5298e9, #ec8bb1, #cdee11, #6fe49c);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+
+/* topnav */
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: none;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/***************/
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.head {
+    text-align: center;
+    color: blue;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    flex: 1 1 50rem;
+    border-radius: 0.5rem;
+    margin: 8px;
+    padding: 1rem;
+    text-align-last: center;
+}
+
+.container .box img {
+    height: 12rem;
+    padding: 1rem;
+}
+
+.box h3 {
+    color: rgb(121, 10, 10);
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+
+.box p {
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.box:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon"
+        href="https://cdn3.iconfinder.com/data/icons/science-114/64/virus-lab-scientist-biology-cell-medical-512.png"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Covid-19 Updates LIVE!</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            background: linear-gradient(-45deg, #1407d4, #E73C7E, #23A6D5, #23D5AB);
+            background-size: 400% 400%;
+            position: relative;
+            animation: change 10s ease-in-out infinite;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+            position: sticky;
+            top: 0;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        h2 {
+            font-family: Europa, Avenir Next, Montserrat, Fredoka One;
+            background-color: #20013a;
+        }
+
+        #grad {
+            width: 450px;
+            border-radius: 5px;
+            text-align: left;
+            background-color: rgb(192, 241, 14);
+            margin: 15px auto;
+            box-shadow: 1px 1px 5px rgba(248, 248, 248, 0.1);
+        }
+
+        #header {
+            text-align: center;
+        }
+
+        #thanks {
+            text-align: center;
+        }
+
+        @keyframes change {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+        .table>tbody>tr>td,
+        .table>tbody>tr>th,
+        .table>tfoot>tr>td,
+        .table>tfoot>tr>th,
+        .table>thead>tr>td,
+        .table>thead>tr>th {
+            padding: 12px;
+            line-height: 2.428571;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="topnav">
+        <a class="active" href="">Latest Data</a>
+        <a href="precautions.html">Precautions</a>
+        <a href="symptoms.html">Symptoms</a>
+        <a href="https://www.cowin.gov.in" target="_blank">Vaccination Portal</a>
+        <a href="../index.html">Go To Main Page</a>
+    </div>
+
+
+
+    <h2 id="header">
+        <font color="yellow"><i class="fa fa-heartbeat"></i> Covid-19 Statistics India
+        </font>
+    </h2>
+    <table id="grad" class="table table-borderless">
+        <thead>
+            <tr>
+                <th>Total Cases</th>
+                <th>Indians</th>
+                <th>Foreigners</th>
+                <th>Deaths</th>
+                <th>Cured</th>
+            </tr>
+        </thead>
+        <tbody id="datahandler1"></tbody>
+    </table>
+    <table id="grad" class="table table-borderless">
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>Cases</th>
+                <th>Deaths</th>
+                <th>Cured</th>
+            </tr>
+        </thead>
+        <tbody id="datahandler2"></tbody>
+    </table>
+
+
+</body>
+<script src="covidjs.js"></script>
+
+
+
+</html>
