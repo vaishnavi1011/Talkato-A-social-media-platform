@@ -27,7 +27,6 @@ body {
 
 .navbar {
     background: #242526;
-    /* width: 100vw; */
     padding: 0 20px 0 20px;
     height: 60px;
     display: flex;
@@ -39,7 +38,7 @@ body {
 }
 
 .navbar_left {
-    width: 25%;
+    /* width: 25%; */
     display: flex;
     align-items: center;
 }
@@ -67,7 +66,7 @@ body {
 }
 
 .input-field {
-    width: 50%;
+    /* width: 50%; */
     padding: 12px 0 12px 35px;
     background: #3a3b3c;
     border: none;
@@ -193,7 +192,7 @@ body {
     margin: auto;
     text-align: center;
     height: 90vh;
-    padding-left: 10px;
+    padding: 0px 15px;
 }
 
 .content_right {
@@ -291,7 +290,8 @@ body {
 
 .stories {
     padding: 25px 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     align-items: center;
 }
 
@@ -604,3 +604,16 @@ body {
 .contacts i {
     margin-left: 15px;
 }
+
+@media screen and (max-width: 1375px) {
+    .content{
+        grid-template-columns: 30% 70%;
+    }
+    .content_right{
+        display: none;
+    }
+
+    .navbar_left{
+        display: none;
+    }
+  }
