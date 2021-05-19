@@ -1,8 +1,7 @@
 var a;
 a = document.getElementById("hide_show");
 
-var b = document.getElementById("foo1");
-var c = document.getElementById("foo2");
+var b = document.getElementById("plus");
 
 function hide() {
 
@@ -18,3 +17,13 @@ function hide() {
         return 1;
     }
 }
+
+// function plus_sign() {
+//     if (b.style.display === "none") {
+//         document.getElementById("plus").style.display = "block";
+//         return 0;
+//     } else {
+//         document.getElementById("plus").style.display = "none";
+//         return 1;
+//     }
+// }

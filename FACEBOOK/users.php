@@ -1,25 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Facebook clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles.css" />
-</head>
-
+<?php 
+  session_start();
+  include_once "php/config.php";
+?>
+<?php include_once "header1.php"; ?>
+<?php 
+            $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
+            if(mysqli_num_rows($sql) > 0){
+              $row = mysqli_fetch_assoc($sql);
+            }
+          ?>
 <body>
-
     <div class="newmessage">
-        <img src="assets/newmessenger.png" alt="">
+        <a href="messenger.php"><img src="assets/newmessenger.png" alt=""></a>
     </div>
     <div class="navbar">
         <div class="navbar_left">
             <img class="navbar_logo" src="assets/facebook.png" alt="logo" />
             <div class="input-icons">
                 <i class="fas fa-search icon"></i>
-                <input class="input-field" type="text" placeholder="Search on Fakebook" />
+                <input class="input-field" type="text" placeholder="Search on Facebook" />
             </div>
         </div>
 
@@ -30,28 +29,50 @@
             <a href="#">
                 <i class="fas fa-user-friends"></i>
             </a>
-            <a href="#">
+            <!-- <a href="#">
                 <i class="fas fa-users"></i>
-            </a>
+            </a> -->
             <a href="#">
                 <i class="fas fa-video"></i>
             </a>
             <a href="#">
                 <i class="fas fa-bell"></i>
             </a>
-
-        </div>
+            <a href="#">
+                <i class="fas fa-gamepad"></i>
+            </a>            
+          </div>
 
         <div class="navbar_right">
             <div class="navbar_right_profile">
-                <img src="assets/profile.png" alt="profile" />
-                <span>Sandeep</span>
+                <img src="php/images/<?php echo $row['img']; ?>" alt="">
+                <span><?php echo $row['fname'] . " " . $row['lname']; ?></span>
             </div>
             <div class="navbar_right_links">
-                <i class="fab fa-facebook-messenger"></i>
-                <i class="fas fa-bell"></i>
-                <i class="fas fa-plus"></i>
+                <a href="messenger.php"><i class="fab fa-facebook-messenger"></i></a>
+                <a href="#"><i class="fas fa-bell"></i></a>
+                <a href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Logout</a>
             </div>
+            <div id="plus" class="plus_minus">
+              <div>
+              <h1><i class="fa fa-cog"></i>Settings & Privacy</h1>
+              </div>
+              <div>
+              <h1><i class="fa fa-question-circle"></i>Help & Support</h1>
+              </div>
+              <div>
+              <h1><i class="fa fa-moon"></i>Display & accessibility</h1>
+              </div>
+              <div>
+              <h1><i class="fa fa-log-out"></i>Sign Out</h1>
+              </div>
+            </div>
+        </div>
+
+        <div class="navbar_right_bars">
+        <a href="#">
+              <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
     <!-- navbar ends -->
@@ -62,8 +83,8 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <img src="assets/profile.png" alt="profile" />
-                            <span>Sandeep kr</span>
+                            <img src="php/images/<?php echo $row['img']; ?>" alt="" style="border-radius: 100%;">
+                            <span><?php echo $row['fname'] . " " . $row['lname']; ?></span>
                         </a>
                     </li>
                     <div class="border"></div>
@@ -119,7 +140,7 @@
                         <div class="border"></div>
                         <h3 class="shortcut_title">Community resources</h3>
                         <li>
-                            <a href="#">
+                            <a href="covid/covid.html">
                                 <img src="assets/covid.png" alt="covid" />
                                 <span>COVID-19 Information Center</span>
                             </a>
@@ -141,7 +162,7 @@
                         <div class="border"></div>
                         <h3 class="shortcut_title">Apps</h3>
                         <li>
-                            <a href="#">
+                            <a href="messenger.php">
                                 <img src="assets/messenger.png" alt="messenger" /> <span>Messenger</span>
                             </a>
                         </li>
@@ -157,7 +178,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="weather/weather.html">
                                 <img src="assets/whether.png" alt="whether" />
                                 <span>Whether</span>
                             </a>
@@ -197,19 +218,15 @@
 
 
         <div>
-            <div class="content_center">
+            <div class="content_right">
                 <div class="stories">
-                    <img src="https://picsum.photos/id/137/110/200" alt="" />
-                    <img src="https://picsum.photos/id/247/110/200" alt="" />
-                    <img src="https://picsum.photos/id/522/110/200" alt="" />
-                    <img src="https://picsum.photos/id/231/110/200" alt="" />
-                    <img src="https://picsum.photos/id/537/110/200" alt="" />
+                    <button id="story"><i class="fa fa-plus-circle"></i><br> Create Story</button>
                 </div>
                 <div class="media_container">
                     <div class="share">
                         <div class="share_upSide">
-                            <img src="assets/profile.png" alt="profile" />
-                            <input type="text" placeholder="What's on your mind, Ogeday?" />
+                        <img src="php/images/<?php echo $row['img']; ?>" alt="" style="border-radius: 100%;">
+                            <button id="share_upSide_btn">What's on your mind, <?php echo $row['fname']; ?>? </button>
                         </div>
                         <hr />
                         <div class="share_downSide">
@@ -218,6 +235,7 @@
                                 <span>Live Video</span>
                             </div>
                             <div class="share_downSide_link">
+                            <!-- <input type="file"> -->
                                 <i class="fas fa-photo-video photo-video-icon"></i>
                                 <span>Photo/Video</span>
                             </div>
@@ -289,98 +307,11 @@
             </div>
         </div>
 
-
-
-
-
-        <div>
-
-            <div class="content_right">
-                <div class="content_right_inner">
-                    <div class="your_pages">
-                        <h3>Your Pages</h3>
-                        <i class="fas fa-ellipsis-h"></i>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img class="your_page_logo" src="assets/codersbite.png" alt="codersbite" />
-                                <span>Codersbite</span>
-                            </a>
-                        </li>
-                        <li class="content_right_small_text">
-                            <a href="#">
-                                <i class="fas fa-bell"></i>
-                                <span>5 Notifications</span>
-                            </a>
-                        </li>
-                        <li class="content_right_small_text">
-                            <a href="#">
-                                <i class="fas fa-bullhorn"></i>
-                                <span>Create Promotion</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="content_right_divider"></div>
-                    <div class="birthdays">
-                        <h3>Birthdays</h3>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="assets/gift-box.png" alt="gift-box" />
-                                <span>Jary Garson's birthday is today</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="content_right_divider"></div>
-                    <div class="contacts">
-                        <h3>Contacts</h3>
-                        <div class="contact_icons">
-                            <i class="fas fa-search"></i>
-                            <i class="fas fa-ellipsis-h"></i>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="assets/avatar1.png" alt="user" />
-                                <span>John Doe</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/avatar2.png" alt="user" />
-                                <span>Zorah Makey</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/avatar5.png" alt="user" />
-                                <span>Kero Janre</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/avatar3.png" alt="user" />
-                                <span>Ube Yuri</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/avatar4.png" alt="user" />
-                                <span>Hosaa Mora</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
 
 
     <script src="script.js">
     </script>
+  
 </body>
-
 </html>
