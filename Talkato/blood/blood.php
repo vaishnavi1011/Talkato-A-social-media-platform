@@ -69,7 +69,7 @@
     $host="localhost";
     $dbusername="root";
     $dbpassword="";
-    $dbname="Talkato";
+    $dbname="talkato";
     //creating connection
     $conn=new mysqli($host,$dbusername,$dbpassword,$dbname);
     // if(!mysqli_connect_error()){
