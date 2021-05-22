@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(10, 24, 61, 1);
+    background-image: linear-gradient( rgb(10, 24, 63), rgba(10, 24, 61, 1), rgb(14, 51, 131), rgb(10, 103, 131));
+}
+
+#SOLMUSIC {
+    left: 72px;
+    top: 47px;
+    position: absolute;
+    overflow: visible;
+    width: 156px;
+    white-space: nowrap;
+    line-height: 36px;
+    margin-top: -0.5px;
+    text-align: left;
+    font-family: Bahnschrift;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(247, 6, 96, 1);
+    letter-spacing: -0.43px;
+}
+
+#asd {
+    position: absolute;
+    width: 672px;
+    display: inline-block;
+    height: 566px;
+    left: 783px;
+    top: 123px;
+    overflow: visible;
+}
+
+#Music_for__everyone {
+    display: inline-block;
+    left: 276px;
+    top: 345px;
+    position: absolute;
+    overflow: visible;
+    width: 403px;
+    white-space: nowrap;
+    line-height: 88px;
+    margin-top: -1px;
+    text-align: left;
+    font-family: Bahnschrift;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 86px;
+    color: rgba(250, 3, 87, 1);
+    text-transform: capitalize;
+}
+
+#Back_To_Home_Page {
+    background-color: rgba(250, 3, 87, 1);
+    padding: 21px;
+    border-radius: 20px;
+    left: 87%;
+    top: 30px;
+    position: absolute;
+    overflow: visible;
+    white-space: nowrap;
+    line-height: 36px;
+    margin-top: -0.5px;
+    text-align: left;
+    font-family: Bahnschrift;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(254, 254, 249, 1);
+    letter-spacing: -0.43px;
+}
+
+nav #menu {
+    color: rgb(65, 23, 23);
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:3048px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 60px;
+    }
+    nav a {
+        font-size: 37px;
+    }
+}
+
+.container {
+    margin-top: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: radial-gradient(180deg, blue, white, red);
+}
+
+.container .box {
+    flex: 2 1 25rem;
+    border-radius: 0.5rem;
+    margin: 1.1;
+    padding: 0.5rem;
+    text-align-last: center;
+}
+
+#img {
+    height: 20rem;
+    padding: 1rem;
+}
+
+.box a {
+    color: rgb(7, 6, 7);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.4rem;
+    border-radius: 20px;
+    background-color: rgb(135, 180, 12);
+}
+
+.box a:hover {
+    cursor: pointer;
+    padding: 0.5rem;
+    color: black;
+    background-color: rgb(202, 202, 8);
+    font-weight: bolder;
+}
+
+.box:hover {
+    box-shadow: 0 0.16rem 0.16rem;
+}
+
+#pic {
+    padding: 20px 20px;
+}
+
+#pic:hover {
+    background-color: rgb(59, 84, 107);
+    box-shadow: 0 0.9rem 0.9rem;
+}

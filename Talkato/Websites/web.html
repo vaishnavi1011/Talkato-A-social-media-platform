@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto+Condensed:ital@1&display=swap"
+        rel="stylesheet">
+    <title>Talkato | Websites</title>
+
+    <style>
+        .home {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+
+        .home button {
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <button onclick="goBack()">Go back</button>
+    </div>
+    <div id="heading">
+        <h1>Popular Websites</h1>
+    </div>
+    <div class="websites">
+        <!-- Amazon -->
+        <li>
+            <a href="https://www.amazon.in/" target="_blank">
+                <img style="background-color: white;"
+                    src="https://cdn.iconscout.com/icon/free/png-512/amazon-68-722671.png" alt="Amazon">
+                <p>Amazon</p>
+            </a>
+        </li>
+        <!-- Amazon -->
+        <!-- Audible -->
+        <li>
+            <a href="https://www.audible.in/" target="_blank">
+                <img src="https://qrius.com/wp-content/uploads/2018/11/Audible-logo-1.png" alt="Audible">
+                <p>Audible</p>
+            </a>
+        </li>
+        <!-- Audible -->
+        <!-- Big Basket -->
+        <li>
+            <a href="https://www.bigbasket.com/" target="_blank">
+                <img style="border-radius: 15%;"
+                    src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/v1481913057/idpaksg5l65vvdiunlvt.png"
+                    alt="Big Basket">
+                <p>Big Basket</p>
+            </a>
+        </li>
+        <!-- Big Basket -->
+        <!-- Byjus -->
+        <li>
+            <a href="https://byjus.com/" target="_blank">
+                <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/am6qfpigmcg5uyw3cp7q"
+                    alt="Byju's">
+                <p>Byju's</p>
+            </a>
+        </li>
+        <!-- Byjus -->
+        <!-- Canvas -->
+        <li>
+            <a href="https://www.canva.com/en_in/login/" target="_blank">
+                <img src="https://logodownload.org/wp-content/uploads/2020/11/canva-logo-3.png" alt="Canvas">
+                <p>Canva</p>
+            </a>
+        </li>
+        <!-- Canvas -->
+        <!-- Cars24 -->
+        <li>
+            <a href="https://www.cars24.com/" target="_blank">
+                <img src="https://images.yourstory.com/cs/images/companies/cars24-1588076014388.png" alt="Cars24">
+                <p>Cars24</p>
+            </a>
+        </li>
+        <!-- Cars24 -->
+        <!-- Cricbuzz -->
+        <li>
+            <a href="https://www.cricbuzz.com/" target="_blank">
+                <img style="background-color: white;"
+                    src="https://iconape.com/wp-content/png_logo_vector/cricbuzz-logo.png" alt="Cricbuzz">
+                <p>Cricbuzz</p>
+            </a>
+        </li>
+        <!-- Cricbuzz -->
+        <!-- Discord -->
+        <li>
+            <a href="https://discord.com/brand-new" target="_blank">
+                <img src="https://www.freepnglogos.com/uploads/discord-logo-png/seven-kingdoms-9.png" alt="Discord">
+                <p>Discord</p>
+            </a>
+        </li>
+        <!-- Discord -->
+        <!-- Dmart -->
+        <li>
+            <a href="https://www.dmartindia.com/" target="_blank">
+                <img src="https://indiancompanies.in/wp-content/uploads/2020/08/DMart-Logo.png" alt="Dmart">
+                <p>Dmart</p>
+            </a>
+        </li>
+        <!-- Dmart -->
+        <!-- Ebay -->
+        <li>
+            <a href="https://www.ebay.com/" target="_blank">
+                <img src="https://cdn.simplesite.com/i/48/14/285697108158125128/i285697114418155777._szw1280h1280_.jpg"
+                    alt="Ebay">
+                <p>Ebay</p>
+            </a>
+        </li>
+        <!-- Ebay -->
+        <!-- facebook -->
+        <li>
+            <a href="https://www.facebook.com/r.php" target="_blank">
+                <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook">
+                <p>Facebook</p>
+            </a>
+        </li>
+        <!-- facebook -->
+        <!-- Flipkart -->
+        <li>
+            <a href="https://www.flipkart.com/" target="_blank">
+                <img src="https://www.acpl.in.net/assets/img/flipkart-icon.png" alt="Flipkart">
+                <p>Flipkart</p>
+            </a>
+        </li>
+        <!-- Flipkart -->
+        <!-- Gana -->
+        <li>
+            <a href="https://gaana.com/" target="_blank">
+                <img src="https://i.pinimg.com/originals/c2/00/9f/c2009ffac887a1949a232a6ed84dad9f.png" alt="Gana">
+                <p>Gana</p>
+            </a>
+        </li>
+        <!-- Gana -->
+        <!-- Github -->
+        <li>
+            <a href="https://github.com/" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github">
+                <p>Github</p>
+            </a>
+        </li>
+        <!-- Github -->
+        <!-- Gmail -->
+        <li>
+            <a href="https://www.google.com/intl/en-GB/gmail/about/#" target="_blank">
+                <img src="https://149493502.v2.pressablecdn.com/wp-content/uploads/2020/10/new-Gmail-icon.jpg"
+                    alt="Gmail">
+                <p>Gmail</p>
+            </a>
+        </li>
+        <!-- Gmail -->
+        <!-- Google drive -->
+        <li>
+            <a href="https://accounts.google.com/signin/v2/identifier?service=wise&passive=true&continue=http%3A%2F%2Fdrive.google.com%2F%3Futm_source%3Den&utm_medium=button&utm_campaign=web&utm_content=gotodrive&usp=gtd&ltmpl=drive&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                target="_blank">
+                <img src="https://play-lh.googleusercontent.com/t-juVwXA8lDAk8uQ2L6d6K83jpgQoqmK1icB_l9yvhIAQ2QT_1XbRwg5IpY08906qEw"
+                    alt="Google drive">
+                <p>Google drive</p>
+            </a>
+        </li>
+        <!-- Google drive -->
+        <!-- Google Duo -->
+        <li>
+            <a href="https://duo.google.com/" target="_blank">
+                <img src="https://apkinfinity.com/wp-content/uploads/2021/01/Google-Duo-High-Quality-Video-Calls-Apk-Mod.png"
+                    alt="Google Duo">
+                <p>Google Duo</p>
+            </a>
+        </li>
+        <!-- Google Duo -->
+        <!-- Google Maps -->
+        <li>
+            <a href="https://www.google.com/maps" target="_blank">
+                <img src="https://e7.pngegg.com/pngimages/200/830/png-clipart-google-map-logo-google-maps-navigation-location-text-logo.png"
+                    alt="Google Maps">
+                <p>Google Maps</p>
+            </a>
+        </li>
+        <!-- Google Maps -->
+        <!-- Google Meet -->
+        <li>
+            <a href="https://meet.google.com/" target="_blank">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/google-meet-2923654-2416657.png"
+                    alt="Google Meet">
+                <p>Google Meet</p>
+            </a>
+        </li>
+        <!-- Google Meet -->
+        <!-- Google Play Store -->
+        <li>
+            <a href="https://play.google.com/store?hl=en&tab=r8" target="_blank">
+                <img style="background-color: white;"
+                    src="https://i.pinimg.com/originals/71/42/62/714262829697e9749a4aa86b3c1f5538.png"
+                    alt="Google Play Store">
+                <p>Google Play Store</p>
+            </a>
+        </li>
+        <!-- Google Play Store -->
+        <!-- Hotstar -->
+        <li>
+            <a href="https://www.hotstar.com/in" target="_blank">
+                <img style="background-color: white;"
+                    src="https://www.apkmirror.com/wp-content/uploads/2020/09/59/5f53c7ddd6437-384x384.png"
+                    alt="Disney + Hotstar">
+                <p>Hotstar</p>
+            </a>
+        </li>
+        <!-- Hotstar -->
+        <!-- instagaram -->
+        <li>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img style="background-color: white; border-radius: 30%;"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png"
+                    alt="Instagram">
+                <p>Instagram</p>
+            </a>
+        </li>
+        <!-- instagaram -->
+        <!-- Jiosaavan -->
+        <li>
+            <a href="https://www.jiosaavn.com/" target="_blank">
+                <img src="https://pbs.twimg.com/profile_images/1316635989100490752/9kaFBVqi_400x400.jpg"
+                    alt="Jiosaavan">
+                <p>Jiosaavan</p>
+            </a>
+        </li>
+        <!-- Jiosaavan -->
+        <!-- Linked-In -->
+        <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="http://theamericanprowler.com/wp-content/uploads/2019/11/unnamed.jpg" alt="Linked-In">
+                <p>Linked-In</p>
+            </a>
+        </li>
+        <!-- Linked-In -->
+        <!-- Myntra -->
+        <li>
+            <a href="https://www.myntra.com/" target="_blank">
+                <img src="https://qph.fs.quoracdn.net/main-qimg-e748b8006c86f5be09002f018a4e37ab" alt="Myntra">
+                <p>Myntra</p>
+            </a>
+        </li>
+        <!-- Myntra -->
+        <!-- Netflix -->
+        <li>
+            <a href="https://www.netflix.com/in/" target="_blank">
+                <img src="https://cdn.vox-cdn.com/thumbor/AwKSiDyDnwy_qoVdLPyoRPUPo00=/39x0:3111x2048/1400x1400/filters:focal(39x0:3111x2048):format(png)/cdn.vox-cdn.com/uploads/chorus_image/image/49901753/netflixlogo.0.0.png"
+                    alt="Netflix">
+                <p>Netflix</p>
+            </a>
+        </li>
+        <!-- Netflix -->
+        <!-- Ola -->
+        <li>
+            <a href="https://www.olacabs.com/" target="_blank">
+                <img src="https://i.pinimg.com/originals/1d/9c/aa/1d9caa2718ff4c24b8716e830641ff3d.png" alt="Ola">
+                <p>Ola cabs</p>
+            </a>
+        </li>
+        <!-- Ola -->
+        <!-- Olx -->
+        <li>
+            <a href="" target="_blank">
+                <img style="background-color: white;" src="https://logosdownload.com/logo/OLX-logo.svg" alt="Olx">
+                <p>Olx</p>
+            </a>
+        </li>
+        <!-- Olx -->
+        <!-- Oyo rooms -->
+        <li>
+            <a href="https://www.oyorooms.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/OYO_Rooms_Logo.jpg/1200px-OYO_Rooms_Logo.jpg"
+                    alt="Oyo rooms">
+                <p>Oyo rooms</p>
+            </a>
+        </li>
+        <!-- Oyo rooms -->
+        <!-- Pinterest -->
+        <li>
+            <a href="https://www.pinterest.com" target="_blank">
+                <img style="border-radius: 50%;"
+                    src="https://i.pinimg.com/474x/13/bc/eb/13bceb594ac9faf0ecd37638c81ffea7.jpg" alt="Pinterest">
+                <p>Pinterest</p>
+            </a>
+        </li>
+        <!-- Pinterest -->
+        <!-- Prime Video -->
+        <li>
+            <a href="https://www.primevideo.com/" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu3P416t4TpgKApltdUGBEyHRUvra2_f2iBAfcrfjtvLzucDmg8Q0SnQ5tnebBqdHggDU&usqp=CAU"
+                    alt="Prime Video">
+                <p>Prime Video</p>
+            </a>
+        </li>
+        <!-- Prime Video -->
+        <!-- quora -->
+        <li>
+            <a href="https://www.quora.com/" target="_blank">
+                <img src="https://play-lh.googleusercontent.com/2FgK0PBW21nF8Nkp1j36BdOb5w7Df-Z1FJevfoD97JH7LTp0ZfacldQKJGpJeUl-qg"
+                    alt="Quora">
+                <p>Quora</p>
+            </a>
+        </li>
+        <!-- quora -->
+        <!-- Reddit -->
+        <li>
+            <a href="https://www.reddit.com/" target="_blank">
+                <img src="https://www.redditinc.com/assets/images/site/reddit-logo.png" alt=" Reddit">
+                <p>Reddit</p>
+            </a>
+        </li>
+        <!-- Reddit -->
+        <!-- Spotify -->
+        <li>
+            <a href="https://www.spotify.com/us/" target="_blank">
+                <img src="http://gotrend.co.za/wp-content/uploads/2020/05/icon1@2x.png" alt="Spotify">
+                <p>Spotify</p>
+            </a>
+        </li>
+        <!-- Spotify -->
+        <!-- Swiggy -->
+        <li>
+            <a href="https://www.swiggy.com/" target="_blank">
+                <img src="https://iconape.com/wp-content/files/mp/234071/svg/234071.svg" alt="Swiggy">
+                <p>Swiggy</p>
+            </a>
+        </li>
+        <!-- Swiggy -->
+        <!-- Teams -->
+        <li>
+            <a href="https://www.microsoft.com/en-in/microsoft-teams/log-in" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Teams_%282018%E2%80%93present%29.svg.png"
+                    alt="Teams">
+                <p>Teams</p>
+            </a>
+        </li>
+        <!-- Teams -->
+        <!-- Telegram -->
+        <li>
+            <a href="https://web.telegram.org/#/login" target="_blank">
+                <img src="https://ve.emedemujer.com/wp-content/uploads/sites/2/2016/05/telegram-logo.jpg"
+                    alt="Telegram">
+                <p>Telegram</p>
+            </a>
+        </li>
+        <!-- Telegram -->
+        <!-- Twitter -->
+        <li>
+            <a href="https://twitter.com/?lang=en" target="_blank">
+                <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="Twitter">
+                <p>Twitter</p>
+            </a>
+        </li>
+        <!-- Twitter -->
+        <!-- Uber -->
+        <li>
+            <a href="https://auth.uber.com/login/?breeze_local_zone=phx3&next_url=https%3A%2F%2Fm.uber.com%2F&state=d2BFmipzOLAHOgTF5CCSpqYy5iABxk1VC0e0F9pxpoQ%3D"
+                target="_blank">
+                <img style="background-color: white;" src="https://pngimg.com/uploads/uber/uber_PNG24.png" alt="Uber">
+                <p>Uber</p>
+            </a>
+        </li>
+        <!-- Uber -->
+        <!-- Udemy -->
+        <li>
+            <a href="https://www.udemy.com/" target="_blank">
+                <img style="background-color: white;"
+                    src="https://d3q6qq2zt8nhwv.cloudfront.net/platform/dbb1a59e6e594c7c8119a9220968a767.png"
+                    alt="Udemy">
+                <p>Udemy</p>
+            </a>
+        </li>
+        <!-- Udemy -->
+        <!-- what's app -->
+        <li>
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="https://image.flaticon.com/icons/png/512/124/124034.png" alt="Whatsapp">
+                <p>Whatsapp</p>
+            </a>
+        </li>
+        <!-- what's app -->
+        <!-- Youtube -->
+        <li>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" alt="Youtube">
+                <p>Youtube</p>
+            </a>
+        </li>
+        <!-- Youtube -->
+        <!-- Zomato -->
+        <li>
+            <a href="https://www.zomato.com/" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq8vxyqK4f-oZ0udU8MgoEbj0oncjrq_PC4IrAe3yn6gSG19_O7Z62znJXV8ng0dUpibo&usqp=CAU"
+                    alt="Zomato">
+                <p>Zomato</p>
+            </a>
+        </li>
+        <!-- Zomato -->
+        <!-- zoom -->
+        <li>
+            <a href="https://zoom.us/signin" target="_blank">
+                <img src="https://seeklogo.com/images/Z/zoom-fondo-azul-vertical-logo-8246E36E95-seeklogo.com.png"
+                    alt="zoom">
+                <p>zoom</p>
+            </a>
+        </li>
+        <!-- zoom -->
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+
+</html>

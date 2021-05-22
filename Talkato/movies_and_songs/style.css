@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-image: radial-gradient( #141618, rgb(106, 106, 129), rgb(11, 11, 12));
+}
+
+.navbody {
+    height: 80px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+nav ul {
+    float: left;
+    margin-left: 1%;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 0 8px;
+    line-height: 80px;
+    padding: 0 40px;
+    background-color: rgb(25, 29, 32);
+    border: 2px solid black;
+    border-radius: 40px;
+}
+
+nav a {
+    color: rgb(173, 213, 236);
+    font-size: 30px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+#home:hover {
+    border: 2px solid rgb(39, 39, 35);
+    transition: 0.6s;
+    background-color: rgb(78, 56, 56);
+    border-radius: 40px;
+    padding: 10px 20px;
+}
+
+#songs:hover {
+    border: 2px solid rgb(39, 39, 35);
+    transition: 0.6s;
+    background-color: rgb(78, 56, 56);
+    border-radius: 40px;
+    padding: 10px 20px;
+}
+
+nav #menu {
+    color: rgb(65, 23, 23);
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:3048px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 60px;
+    }
+    nav a {
+        font-size: 37px;
+    }
+}
+
+.container {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: radial-gradient(180deg, blue, white, red);
+}
+
+.container .box {
+    flex: 2 1 25rem;
+    border-radius: 0.5rem;
+    margin: 1.1;
+    padding: 0.1rem;
+    text-align-last: center;
+}
+
+.container .box img {
+    height: 25rem;
+    padding: 2rem;
+}
+
+.box a {
+    color: rgb(249, 252, 243);
+    font-size: 3rem;
+    padding: 0.2rem;
+}
+
+.box a:hover {
+    cursor: pointer;
+    color: rgb(24, 107, 17);
+    text-shadow: yellow;
+    font-weight: bolder;
+}
+
+.box:hover {
+    box-shadow: 0 0.1rem 0.1rem;
+    background-color: rgb(106, 106, 129);
+}
+
+.link {
+    align-items: center;
+    text-align: center;
+}
