@@ -76,7 +76,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="donate/index.html">
+                            <a href="#">
                                 <img src="assets/communityhelp.png" alt="" />
                                 <span>Community Help</span>
                             </a>
