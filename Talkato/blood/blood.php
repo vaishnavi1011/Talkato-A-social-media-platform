@@ -69,7 +69,7 @@
     $host="localhost";
     $dbusername="root";
     $dbpassword="";
-    $dbname="facebook";
+    $dbname="Talkato";
     //creating connection
     $conn=new mysqli($host,$dbusername,$dbpassword,$dbname);
     // if(!mysqli_connect_error()){

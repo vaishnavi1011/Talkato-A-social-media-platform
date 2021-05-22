@@ -2,7 +2,7 @@
   $hostname = "localhost";
   $username = "root";
   $password = "";
-  $dbname = "facebook";
+  $dbname = "Talkato";
 
   $conn = mysqli_connect($hostname, $username, $password, $dbname);
   if(!$conn){
