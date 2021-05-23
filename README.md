@@ -28,7 +28,10 @@ We came up with the idea of creating a platform called TALKATO to implement chat
 
 > _**Games**_:Allows user to play games among a number of available options.
 
+> _**Blood-Donation**_: Intrested donars can give their contact info along with blood group and one can contact them when required.
 
+
+> _**Popular Websites**_:It allows user to access other major websites through our page.
 
 ## Technology Stack used: 
 
