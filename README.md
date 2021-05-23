@@ -1,4 +1,4 @@
-# Talkato| A social media platform
+<!-- # Talkato| A social media platform -->
 
   
 <h1 align="center">Talkato | A social media platform</h1> 
